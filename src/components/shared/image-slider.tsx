@@ -18,6 +18,7 @@ export interface SlideItem {
   title?: string;
   description?: string;
   link?: string;
+  objectFit?: "cover" | "contain";
 }
 
 interface ImageSliderProps {
@@ -68,7 +69,7 @@ export function ImageSlider({
           "w-full bg-gray-200 animate-pulse",
           ASPECT_RATIOS[aspectRatio],
           rounded && "rounded-xl",
-          className
+          className,
         )}
       />
     );
@@ -83,16 +84,17 @@ export function ImageSlider({
           "relative w-full overflow-hidden",
           ASPECT_RATIOS[aspectRatio],
           rounded && "rounded-xl",
-          className
+          className,
         )}
       >
         <img
           src={slide?.src || "/placeholder-image.jpg"}
           alt={slide?.alt || "Image"}
           className={cn(
-            "object-cover w-full h-full",
+            "w-full h-full",
+            slide?.objectFit === "contain" ? "object-contain" : "object-cover",
             rounded && "rounded-xl",
-            onSlideClick && "cursor-pointer"
+            onSlideClick && "cursor-pointer",
           )}
           onClick={() => onSlideClick?.(slide, 0)}
         />
@@ -101,7 +103,7 @@ export function ImageSlider({
           <div
             className={cn(
               "absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent",
-              rounded && "rounded-xl"
+              rounded && "rounded-xl",
             )}
           />
         )}
@@ -125,7 +127,7 @@ export function ImageSlider({
         "relative w-full overflow-hidden",
         ASPECT_RATIOS[aspectRatio],
         rounded && "rounded-xl",
-        className
+        className,
       )}
     >
       <>
@@ -160,9 +162,12 @@ export function ImageSlider({
                 src={slide.src}
                 alt={slide.alt || `Slide ${index + 1}`}
                 className={cn(
-                  "object-cover w-full h-full",
+                  "w-full h-full",
+                  slide.objectFit === "contain"
+                    ? "object-contain"
+                    : "object-cover",
                   rounded && "rounded-xl",
-                  onSlideClick && "cursor-pointer"
+                  onSlideClick && "cursor-pointer",
                 )}
                 onClick={() => onSlideClick?.(slide, index)}
               />
@@ -187,7 +192,7 @@ export function ImageSlider({
           <div
             className={cn(
               "absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10",
-              rounded && "rounded-xl"
+              rounded && "rounded-xl",
             )}
           />
         )}
