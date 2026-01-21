@@ -1,0 +1,156 @@
+/* HTML Content Styling for Static Pages */
+
+.html-content {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.html-content h1 {
+  @apply text-3xl md:text-4xl font-bold text-primary mb-6 mt-8 first:mt-0;
+}
+
+.html-content h2 {
+  @apply text-2xl md:text-3xl font-bold text-primary mb-4 mt-8 first:mt-0;
+}
+
+.html-content h3 {
+  @apply text-xl md:text-2xl font-semibold text-primary mb-3 mt-6;
+}
+
+.html-content h4 {
+  @apply text-lg md:text-xl font-semibold text-gray-800 mb-2 mt-4;
+}
+
+.html-content p {
+  @apply mb-4 text-gray-700 leading-relaxed;
+}
+
+.html-content ul {
+  @apply mb-4 ml-6 space-y-2;
+}
+
+.html-content ol {
+  @apply mb-4 ml-6 space-y-2;
+}
+
+.html-content li {
+  @apply text-gray-700 leading-relaxed;
+  @apply relative;
+}
+
+.html-content ul li {
+  @apply list-none;
+}
+
+.html-content ul li::before {
+  content: "•";
+  @apply text-primary font-bold absolute -left-4 top-0;
+}
+
+.html-content ol li {
+  @apply list-decimal;
+}
+
+.html-content blockquote {
+  @apply border-l-4 border-primary bg-gradient-to-r from-primary/5 to-primary/10 p-6 my-6 italic rounded-r-lg relative;
+}
+
+.html-content blockquote p {
+  @apply mb-2 text-gray-800 font-medium text-lg;
+}
+
+.html-content strong {
+  @apply font-semibold text-gray-800;
+}
+
+.html-content em {
+  @apply italic text-gray-600;
+}
+
+.html-content a {
+  @apply text-primary hover:text-primary/80 font-medium underline decoration-primary/30 hover:decoration-primary/60 transition-colors;
+}
+
+.html-content code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono text-sm;
+}
+
+.html-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.html-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.html-content table {
+  @apply w-full border-collapse border border-gray-300 mb-4;
+}
+
+.html-content th {
+  @apply bg-primary/10 border border-gray-300 px-4 py-2 text-left font-semibold text-gray-800;
+}
+
+.html-content td {
+  @apply border border-gray-300 px-4 py-2 text-gray-700;
+}
+
+.html-content hr {
+  @apply border-0 border-t border-gray-300 my-8;
+}
+
+/* Special styling for Arabic content */
+.html-content[dir="rtl"] {
+  @apply text-right;
+}
+
+.html-content[dir="rtl"] ul {
+  @apply mr-6 ml-0;
+}
+
+.html-content[dir="rtl"] ol {
+  @apply mr-6 ml-0;
+}
+
+.html-content[dir="rtl"] ul li::before {
+  @apply -right-4 left-auto;
+}
+
+.html-content[dir="rtl"] blockquote {
+  @apply border-r-4 border-l-0 rounded-l-lg rounded-r-none;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .html-content h1 {
+    @apply text-2xl;
+  }
+
+  .html-content h2 {
+    @apply text-xl;
+  }
+
+  .html-content h3 {
+    @apply text-lg;
+  }
+
+  .html-content blockquote {
+    @apply p-4 text-base;
+  }
+}
+
+/* Print styles */
+@media print {
+  .html-content {
+    @apply text-black;
+  }
+
+  .html-content h1,
+  .html-content h2,
+  .html-content h3 {
+    @apply text-black;
+  }
+
+  .html-content blockquote {
+    @apply border-gray-400 bg-gray-100;
+  }
+}
