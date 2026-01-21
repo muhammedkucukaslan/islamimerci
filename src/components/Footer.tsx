@@ -1,116 +1,127 @@
-import Link from 'next/link'
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import {
+  Facebook,
+  Heart,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-background border-t border-primary/10 text-muted-foreground">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* About Section */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                <Heart className="w-5 h-5 text-white" />
+          <div className="space-y-6">
+            <div className="flex items-center space-x-2">
+              <div className="bg-gradient-to-br from-primary to-accent p-2 rounded-xl shadow-lg shadow-primary/10">
+                <Heart className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-white">Yardımlaşma Derneği</span>
+              <span className="text-xl font-bold text-foreground">
+                Yardımlaşma Derneği
+              </span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Topluma hizmet etmek ve ihtiyaç sahiplerine destek olmak için kurulmuş bir yardımlaşma derneğiyiz.
+            <p className="text-sm leading-relaxed">
+              Topluma hizmet etmek ve ihtiyaç sahiplerine destek olmak için
+              kurulmuş, modern ve şeffaf bir yardımlaşma derneğiyiz.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-pink-600 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-700 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
+            <div className="flex space-x-3">
+              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, idx) => (
+                <a
+                  key={idx}
+                  href="#"
+                  className="p-2.5 rounded-xl border border-primary/10 hover:bg-primary hover:text-primary-foreground hover:-translate-y-1 transition-all duration-300"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Hızlı Bağlantılar</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/hakkimizda" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                  Hakkımızda
-                </Link>
-              </li>
-              <li>
-                <Link href="/faaliyetlerimiz" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                  Faaliyetlerimiz
-                </Link>
-              </li>
-              <li>
-                <Link href="/banka-hesaplari" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                  Banka Hesapları
-                </Link>
-              </li>
-              <li>
-                <Link href="/iletisim" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                  İletişim
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Yasal</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/gizlilik-politikasi" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>
-                  Gizlilik Politikası
-                </Link>
-              </li>
-              <li>
-                <Link href="/kullanim-kosullari" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>
-                  Kullanım Koşulları
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerez-politikasi" className="hover:text-white transition-colors flex items-center">
-                  <span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>
-                  Çerez Politikası
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {[
+            {
+              title: "Hızlı Bağlantılar",
+              links: [
+                { name: "Hakkımızda", href: "/hakkimizda" },
+                { name: "Faaliyetlerimiz", href: "/faaliyetlerimiz" },
+                { name: "Banka Hesapları", href: "/banka-hesaplari" },
+                { name: "İletişim", href: "/iletisim" },
+              ],
+              dotColor: "bg-primary",
+            },
+            {
+              title: "Yasal",
+              links: [
+                { name: "Gizlilik Politikası", href: "/gizlilik-politikasi" },
+                { name: "Kullanım Koşulları", href: "/kullanim-kosullari" },
+                { name: "Çerez Politikası", href: "/cerez-politikasi" },
+              ],
+              dotColor: "bg-accent",
+            },
+          ].map((section) =>
+            section.title && section.links ? (
+              <div key={section.title}>
+                <h3 className="text-foreground font-bold text-lg mb-6">
+                  {section.title}
+                </h3>
+                <ul className="space-y-4">
+                  {section.links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="hover:text-primary transition-colors flex items-center group"
+                      >
+                        <span
+                          className={`w-1.5 h-1.5 ${section.dotColor} rounded-full mr-3 group-hover:scale-150 transition-transform`}
+                        ></span>
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null,
+          )}
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">İletişim</h3>
-            <ul className="space-y-4">
+            <h3 className="text-foreground font-bold text-lg mb-6">İletişim</h3>
+            <ul className="space-y-5">
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
+                <div className="p-2 rounded-lg bg-primary/10 mr-4">
+                  <MapPin className="w-4 h-4 text-primary" />
+                </div>
                 <span className="text-sm">
-                  Merkez Mahallesi, Yardım Sokak No:123<br />
+                  Merkez Mahallesi, Yardım Sokak No:123
+                  <br />
                   İstanbul, Türkiye
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                <a href="tel:+902121234567" className="hover:text-white transition-colors text-sm">
+                <div className="p-2 rounded-lg bg-primary/10 mr-4">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
+                <a
+                  href="tel:+902121234567"
+                  className="hover:text-primary transition-colors text-sm"
+                >
                   +90 (212) 123 45 67
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
-                <a href="mailto:info@yardimlasmadernegi.org" className="hover:text-white transition-colors text-sm">
+                <div className="p-2 rounded-lg bg-primary/10 mr-4">
+                  <Mail className="w-4 h-4 text-primary" />
+                </div>
+                <a
+                  href="mailto:info@yardimlasmadernegi.org"
+                  className="hover:text-primary transition-colors text-sm"
+                >
                   info@yardimlasmadernegi.org
                 </a>
               </li>
@@ -119,12 +130,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
-          <p>
-            © {currentYear} Yardımlaşma Derneği. Tüm hakları saklıdır.
-          </p>
+        <div className="border-t border-primary/10 mt-16 pt-8 text-center text-sm">
+          <p>© {currentYear} Yardımlaşma Derneği. Gelecek nesillere umutla.</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

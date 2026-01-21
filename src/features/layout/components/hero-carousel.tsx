@@ -5,6 +5,13 @@ import { useRouter } from "next/navigation";
 
 const CAROUSEL_ITEMS: SlideItem[] = [
   {
+    id: "about-main",
+    src: "https://i.hizliresim.com/7fzonfe.jpg",
+    alt: "Hakkımızda - İslami Merci",
+    objectFit: "contain",
+    link: "/hakkimizda",
+  },
+  {
     id: "medrese",
     src: "https://i.hizliresim.com/7fzonfe.jpg",
     alt: "Medrese ve Hafızlık kayıtları başladı",
@@ -24,11 +31,11 @@ export function HeroCarousel() {
   return (
     <ImageSlider
       slides={CAROUSEL_ITEMS}
-      className="h-[400px] md:h-[500px] object-cover"
-      aspectRatio="ultrawide"
+      className="h-[300px] md:h-[550px]"
+      aspectRatio="video"
       showNavigation={true}
       showPagination={true}
-      autoplay={{ delay: 6000 }}
+      autoplay={{ delay: 8000 }}
       loop={true}
       rounded={true}
       overlay={false}
