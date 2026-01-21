@@ -17,7 +17,7 @@ const activities = [
     title: "Medrese Eğitimi",
     category: "Eğitim",
     date: "Sürekli",
-    image: "https://i.hizliresim.com/7fzonfe.jpg",
+    image: "https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlwG1i8I9cpQ9F4PjxLTW0fdDvlhMbaRq7utVk",
     desc: "Geleceğin alimlerini ve hafızlarını yetiştirmek için medrese faaliyetlerimize devam ediyoruz. Mahmud Efendi Hazretleri'nin mirasını yaşatıyoruz.",
     link: "/faaliyetlerimiz/medrese",
   },
@@ -63,8 +63,8 @@ export default function ActivitiesPage() {
             Faaliyetlerimiz
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Dünyanın dört bir yanında ümmetin hizmetinde yürüttüğümüz hayır
-            projelerimizden haberdar olun.
+            Ümmetin selameti ve yardımlaşma ruhunu yaşatmak 
+            adına yürüttüğümüz temel faaliyetlerimiz.
           </p>
         </div>
       </section>

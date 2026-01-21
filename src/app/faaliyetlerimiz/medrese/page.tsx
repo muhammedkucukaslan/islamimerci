@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -16,14 +18,14 @@ export default function MedresePage() {
         {/* Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Image
-            src="https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlgE6Xw4J89iDG0OpbzcY7MhmVkW6lHufaEgRq"
+            src="https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlwG1i8I9cpQ9F4PjxLTW0fdDvlhMbaRq7utVk"
             alt="Medrese 1"
-            width={600}
+            width={800}
             height={400}
             className="rounded-xl object-cover"
           />
           <Image
-            src="https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlDJ8pfj10j6oazXRHblAvLpfOehYG3ri1N4gm"
+            src="https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNltDB6Y4bkS9WNFG1KhvArmfz82tRVdqoxBige"
             alt="Medrese 2"
             width={600}
             height={400}
@@ -35,7 +37,7 @@ export default function MedresePage() {
         <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
 
           <p>
-            Medresemiz, Mahmud Efendi hazretlerinin yoluna uygun olarak talebe
+            Medresemiz, Mahmud Efendi Hazretlerinin yoluna uygun olarak talebe
             yetiştirmekte, Kur’ân-ı Kerîm ve Sünnet-i Seniyye üzere hizmet
             vermektedir. Bu hayırlı hizmetin devamı için maddî ve manevî
             desteklerinize ihtiyaç vardır.
@@ -92,6 +94,11 @@ export default function MedresePage() {
         </div>
 
         
+     <Link href="/banka-hesaplari" className="block pt-4 border-t border-primary/10">
+  <Button className="w-full h-14 rounded-[1.2rem] text-lg font-bold bg-primary shadow-xl shadow-primary/20">
+    Bağış Yap
+  </Button>
+</Link>
 
       </div>
     </div>

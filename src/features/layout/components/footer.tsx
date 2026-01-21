@@ -11,7 +11,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { siteConfig } from "@/lib/siteconfig";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -25,8 +24,6 @@ import {
 } from "lucide-react";
 
 export function Footer() {
-  const t = useTranslations("footer");
-  const tCommon = useTranslations("common");
 
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);

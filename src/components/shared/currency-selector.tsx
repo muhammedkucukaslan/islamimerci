@@ -7,7 +7,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
-import { useCurrency } from "@/providers/CurrencyProvider";
 
 interface CurrencySelectorProps {
   value?: string;
@@ -20,20 +19,24 @@ interface CurrencySelectorProps {
   useGlobalState?: boolean; // Yeni prop: global state kullanılsın mı
 }
 
+const getCurrencySymbol = (currency: string): string => {
+  const symbols: Record<string, string> = {
+    TRY: "₺",
+    USD: "$",
+    EUR: "€",
+  };
+  return symbols[currency] || currency;
+};
+
 const CurrencySelector: React.FC<CurrencySelectorProps> = ({
   value,
   onValueChange,
   disabled = false,
   className,
-  useGlobalState = false, // Varsayılan olarak false
+  useGlobalState = false,
 }) => {
-  const { currency, setCurrency, getCurrencySymbol } = useCurrency();
-
-  // Global state kullanılacaksa provider'dan değerleri al
-  const currentValue = useGlobalState ? currency : value || "TRY";
-  const handleValueChange = useGlobalState
-    ? (newValue: string) => setCurrency(newValue as any)
-    : onValueChange || (() => {}); // Fallback empty function
+  const currentValue = value || "TRY";
+  const handleValueChange = onValueChange || (() => {});
 
   const currencyOptions = [
     {

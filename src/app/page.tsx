@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeroCarousel } from "@/features/layout/components/hero-carousel";
-import { ArrowRight, Globe, Heart, Users } from "lucide-react";
+import { ArrowRight, Book, BookA, Globe, Heart, Users } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -13,11 +13,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 pb-20">
-      {/* Hero Section with padding to avoid header overlap */}
-      <section className="pt-24 md:pt-32">
-        <HeroCarousel />
-      </section>
+<div className="flex flex-col gap-16 pb-20">
+  <section className="pt-12 md:pt-16">
+    <HeroCarousel />
+  </section>
 
       {/* About Section - Improved Design */}
       <section className="container mx-auto px-4">
@@ -25,20 +24,15 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/10 transition-colors duration-1000" />
 
           <div className="max-w-4xl space-y-10 relative z-10">
-            <div className="inline-flex items-center space-x-3 text-primary bg-primary/10 px-6 py-2 rounded-2xl text-sm font-bold tracking-wide uppercase">
-              <Heart className="w-5 h-5 fill-primary/20" />
-              <span>Gönül Köprüsü</span>
-            </div>
-
+       
             <div className="space-y-6">
               <h2 className="text-4xl md:text-7xl font-black leading-[1.1] tracking-tighter text-foreground">
-                İyiliği{" "}
+                Bu Dini{" "}
                 <span className="text-primary italic relative">
-                  Yaymak{" "}
+                  Herkese{" "}
                   <span className="absolute bottom-2 left-0 w-full h-2 bg-primary/10 -z-10 rotate-1" />
                 </span>{" "}
-                İçin <br />
-                Buradayız
+                Anlatacağız
               </h2>
               <p className="text-muted-foreground text-xl md:text-2xl leading-relaxed font-medium max-w-2xl">
                 İslami Merci Derneği, ilim ve yardımlaşma ruhuyla dünyanın her
@@ -47,28 +41,30 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-6">
-              {[
+                {[
                 {
                   title: "Şeffaf Hizmet",
                   desc: "Tüm bağış ve faaliyetlerimizi şeffaflıkla paylaşıyoruz.",
+                  icon: Globe,
                 },
                 {
                   title: "Hızlı Teslimat",
                   desc: "Emanetlerinizi en güvenli ve en hızlı şekilde ulaştırıyoruz.",
+                  icon: Heart,
                 },
-              ].map((stat, i) => (
-                <div key={i} className="flex gap-6 items-start">
+                ].map((stat, i) => (
+                <div key={i} className="flex gap-6 items-start p-6 bg-white/40 backdrop-blur-xl rounded-2xl border border-primary/10 hover:shadow-lg transition-all">
                   <div className="w-1.5 h-12 bg-primary/20 rounded-full" />
-                  <div className="space-y-1">
-                    <div className="text-2xl font-black text-foreground">
-                      {stat.title}
-                    </div>
-                    <div className="text-muted-foreground font-medium leading-snug">
-                      {stat.desc}
-                    </div>
+                  <div className="space-y-2 flex-1">
+                  <div className="text-xl font-bold text-foreground">
+                    {stat.title}
+                  </div>
+                  <div className="text-muted-foreground font-medium leading-snug text-sm">
+                    {stat.desc}
+                  </div>
                   </div>
                 </div>
-              ))}
+                ))}
             </div>
 
             <Link href="/hakkimizda" className="inline-block pt-6">
@@ -76,7 +72,7 @@ export default function Home() {
                 size="lg"
                 className="rounded-2xl px-12 h-20 text-xl shadow-2xl shadow-primary/30 hover:scale-105 hover:rotate-1 active:scale-95 transition-all font-black bg-primary"
               >
-                Tüm Hikayemizi Keşfet
+                Kuruluşumuzu Öğrenin
               </Button>
             </Link>
           </div>
@@ -100,7 +96,7 @@ export default function Home() {
             {
               title: "Medrese Eğitimi",
               desc: "Geleceğin alimlerini yetiştirmek için medrese faaliyetlerimize destek olun.",
-              icon: Globe,
+              icon: Book,
               color: "bg-blue-500",
             },
             {

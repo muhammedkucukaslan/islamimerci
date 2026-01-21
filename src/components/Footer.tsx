@@ -24,7 +24,7 @@ export default function Footer() {
                 <Heart className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="text-xl font-bold text-foreground">
-                Yardımlaşma Derneği
+                İslami Merci Derneği
               </span>
             </div>
             <p className="text-sm leading-relaxed">
@@ -98,9 +98,9 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <span className="text-sm">
-                  Merkez Mahallesi, Yardım Sokak No:123
+                  Cumhuriyet Mahallesi, Çelik Hançer Caddesi, No: 14b
                   <br />
-                  İstanbul, Türkiye
+                  Bahçelievler, İstanbul, Türkiye
                 </span>
               </li>
               <li className="flex items-center">
@@ -111,7 +111,7 @@ export default function Footer() {
                   href="tel:+902121234567"
                   className="hover:text-primary transition-colors text-sm"
                 >
-                  +90 (212) 123 45 67
+                  +90 (532) 599 18 43
                 </a>
               </li>
               <li className="flex items-center">
@@ -119,10 +119,10 @@ export default function Footer() {
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
                 <a
-                  href="mailto:info@yardimlasmadernegi.org"
+                  href="mailto:info@islamimerci.org"
                   className="hover:text-primary transition-colors text-sm"
                 >
-                  info@yardimlasmadernegi.org
+                  info@islamimerci.org
                 </a>
               </li>
             </ul>

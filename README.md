@@ -119,7 +119,7 @@ Katkıda bulunmak için lütfen bir issue açın veya pull request gönderin.
 ## 📧 İletişim
 
 - **E-posta**: info@yardimlasmadernegi.org
-- **Telefon**: +90 (212) 123 45 67
+- **Telefon**: +90 (532) 599 18 43
 - **Adres**: Merkez Mahallesi, Yardım Sokak No:123, Kadıköy, İstanbul
 
 ---

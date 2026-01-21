@@ -109,7 +109,7 @@ export const siteConfig = {
       {
         language: "tr",
         content: `
-        Âlimlerin Rabbi, kâinatın kapladığı her bir zerreyi yoktan var eden, onların her halinden haberdar olan ve üzerinde mutlak kudret sahibi bulunan Allah Azze ve Celle’ye hamd-u senâlar olsun. Âlemlere rahmet olarak gönderilen Sevgili Peygamberimiz Muhammed Mustafa’ya (sallallahu aleyhi ve sellem), O’nun mübarek kardeşleri olan Hz. Âdem’den Hz. Îsâ’ya kadar gelen tüm peygamberlere, Allah yolunda cihad etmiş ve büyük mücadeleler vermiş Ashâb-ı Kirâm’a ve onların izinden giderek ilmi muhafaza edip insanlara öğreten Ehl-i Sünnet âlimlerine salât ve selâm olsun.
+        Âlemlerin Rabbi, kâinatın kapladığı her bir zerreyi yoktan var eden, onların her halinden haberdar olan ve üzerinde mutlak kudret sahibi bulunan Allah Azze ve Celle’ye hamd-u senâlar olsun. Âlemlere rahmet olarak gönderilen Sevgili Peygamberimiz Muhammed Mustafa’ya (sallallahu aleyhi ve sellem), O’nun mübarek kardeşleri olan Hz. Âdem’den Hz. Îsâ’ya kadar gelen tüm peygamberlere, Allah yolunda cihad etmiş ve büyük mücadeleler vermiş Ashâb-ı Kirâm’a ve onların izinden giderek ilmi muhafaza edip insanlara öğreten Ehl-i Sünnet âlimlerine salât ve selâm olsun.
 
         Bu faziletleri saymakla bitmeyen, pek mübarek ve üstün zâtların kutlu davasını devam ettirmek niyetiyle İslami Merci Derneği, 04.07.2024 tarihinde Derneğimizin Başkanı Muhammed Emre Karadayı Hoca Efendi ve dava arkadaşları tarafından kurulmuştur.
 

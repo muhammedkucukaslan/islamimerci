@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yardımlaşma Derneği",
+  title: "İslami Merci Derneği",
   description: "Topluma hizmet eden bir yardımlaşma derneği",
 };
 

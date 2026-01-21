@@ -5,17 +5,17 @@ import { useRouter } from "next/navigation";
 
 const CAROUSEL_ITEMS: SlideItem[] = [
   {
-    id: "about-main",
-    src: "https://i.hizliresim.com/7fzonfe.jpg",
+    id: "hakkimizda",
+    src: "https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlDMtV7R10j6oazXRHblAvLpfOehYG3ri1N4gm",
     alt: "Hakkımızda - İslami Merci",
     objectFit: "contain",
     link: "/hakkimizda",
   },
   {
     id: "medrese",
-    src: "https://i.hizliresim.com/7fzonfe.jpg",
+    src: "https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlwG1i8I9cpQ9F4PjxLTW0fdDvlhMbaRq7utVk",
     alt: "Medrese ve Hafızlık kayıtları başladı",
-    link: "mailto:iletisim@islamimerci.org",
+    link: "/faaliyetlerimiz/medrese",
   },
 ];
 
@@ -23,23 +23,24 @@ export function HeroCarousel() {
   const router = useRouter();
 
   const handleSlideClick = (slide: SlideItem) => {
-    if (slide.link) {
-      router.push(slide.link);
-    }
+    if (slide.link) router.push(slide.link);
   };
 
   return (
-    <ImageSlider
-      slides={CAROUSEL_ITEMS}
-      className="h-[300px] md:h-[550px]"
-      aspectRatio="video"
-      showNavigation={true}
-      showPagination={true}
-      autoplay={{ delay: 8000 }}
-      loop={true}
-      rounded={true}
-      overlay={false}
-      onSlideClick={handleSlideClick}
-    />
+    <div className="w-full max-w-5xl mx-auto px-4 mt-6">
+      <ImageSlider
+        slides={CAROUSEL_ITEMS}
+       className="h-[220px] sm:h-[280px] md:h-[360px] lg:h-[440px] xl:h-[480px]"
+
+        aspectRatio="video"
+        showNavigation={true}
+        showPagination={true}
+        autoplay={{ delay: 7000 }}
+        loop={true}
+        rounded={true}
+        overlay={false}
+        onSlideClick={handleSlideClick}
+      />
+    </div>
   );
 }
