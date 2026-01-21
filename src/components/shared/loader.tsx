@@ -1,4 +1,4 @@
-import { LoaderCircle } from "lucide-react";
+import { Loader as LoaderIcon } from "lucide-react";
 import React from "react";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Loader = ({ state, children }: Props) => {
-  return <>{state ? <LoaderCircle className="animate-spin" /> : children}</>;
+  return <>{state ? <LoaderIcon className="animate-spin" /> : children}</>;
 };
 
 export default Loader;
