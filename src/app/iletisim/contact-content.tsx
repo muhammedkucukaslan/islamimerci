@@ -39,18 +39,18 @@
 
     const locations = [
       {
-        name: "İslami Merci Derneği Mescidi - 1",
-        address: "Merkez Mahallesi, Yardım Sokak No:123",
-        district: "Bahçelievler / İstanbul",
-        mapUrl: "BURAYA_GOOGLE_MAPS_EMBED_LINKI_1", 
-        directionsUrl: "BURAYA_GOOGLE_MAPS_DIRECTIONS_LINKI_1", // Google Maps directions linki
+        name: "Bağcılar Mescidimiz",
+        address: "Yıldıztepe Mahallesi, 37/13B no:13",
+        district: "Bağcılar / İstanbul",
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d243.9785899490223!2d28.851282289154266!3d41.02238560336174!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v1769116854111!5m2!1sen!2str", 
+        directionsUrl: "https://maps.app.goo.gl/9Ki7PhUA3ceZoVoq9", 
       },
       {
-        name: "İslami Merci Derneği Mescid - 2",
+        name: "Bahçelievler Mescidimiz",
         address: "Cumhuriyer Mahallesi, Çelik Hançer Caddesi, No: 14b",
         district: "Bahçelievler / İstanbul",
-        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.3287628599205!2d28.852229859134788!3d41.01726027979607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa537e44c5f57%3A0x594e1904e52236b5!2s%C4%B0slami%20Merci%20Derne%C4%9Fi!5e0!3m2!1sen!2str!4v1769031903426!5m2!1sen!2str" , // Google Maps'ten Embed link al
-        directionsUrl: "https://maps.app.goo.gl/yDDzLhjBTAxVePjL8", // Google Maps directions linki
+        mapUrl: "https://www.google.com/maps/embed?pb=!4v1769116748076!6m8!1m7!1s0ZS0bgu7L2wSPThwAyeGKA!2m2!1d41.01633662935193!2d28.85284795351972!3f99.34644812159151!4f-0.4385758261761481!5f0.7820865974627469" , 
+        directionsUrl: "https://maps.app.goo.gl/yDDzLhjBTAxVePjL8", 
       },
     ];
 
