@@ -107,8 +107,7 @@ export default function MushafPage() {
 
           <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
             <p className="font-semibold text-green-900">
-              "Kim Allah yolunda bir şey infak ederse, o kendisi için yedi yüz 
-              kat artırılır." (Bakara, 261)
+              "Mallarını Allah yolunda harcayanların misâli, her başağında yüz tanenin bulunduğu yedi adet başak çıkaran bir tohum tanesi gibidir. Allah dilediğine katlayarak verir, Allah (zât ve sıfatlarında) sınırsızdır, her şeyi bilmektedir." (Bakara, 261)
             </p>
           </div>
         </div>
