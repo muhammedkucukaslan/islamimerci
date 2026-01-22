@@ -149,7 +149,7 @@ export default function FaziletliAmellerPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-black">Başlıca Kaynaklar</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Cübbeli Ahmet Hocamizin Kitapları, Dergileri ve Sohbetleri</li>
+            <li>Cübbeli Ahmet Hocamızın Kitapları, Dergileri ve Sohbetleri</li>
             <li>Şir'atü'l-İslâm</li>
             <li>Faziletleriyle Gün Ve Geceler - M. İsmail Kemaloğlu</li>
             <li>İhyâ-u Ulûmiddîn</li>
