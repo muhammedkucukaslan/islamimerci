@@ -98,9 +98,9 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <span className="text-sm">
-                  Cumhuriyet Mahallesi, Çelik Hançer Caddesi, No: 14b
+                  Yıldıztepe Mahallesi, 37/13B no:13
                   <br />
-                  Bahçelievler, İstanbul, Türkiye
+                  Bağcılar, İstanbul, Türkiye
                 </span>
               </li>
               <li className="flex items-center">
@@ -108,7 +108,7 @@ export default function Footer() {
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
                 <a
-                  href="tel:+902121234567"
+                  href="tel:+905325991843"
                   className="hover:text-primary transition-colors text-sm"
                 >
                   +90 (532) 599 18 43
@@ -119,10 +119,10 @@ export default function Footer() {
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
                 <a
-                  href="mailto:info@islamimerci.org"
+                  href="mailto:iletisim@islamimerci.org"
                   className="hover:text-primary transition-colors text-sm"
                 >
-                  info@islamimerci.org
+                  iletisim@islamimerci.org
                 </a>
               </li>
             </ul>
@@ -131,7 +131,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary/10 mt-16 pt-8 text-center text-sm">
-          <p>© {currentYear} Yardımlaşma Derneği. Gelecek nesillere umutla.</p>
+          <p>© {currentYear} İslami Merci Derneği. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>
