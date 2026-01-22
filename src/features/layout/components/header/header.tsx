@@ -1,6 +1,5 @@
 "use client";
 
-import LanguageSwitcher from "@/components/shared/language-switcher";
 import Logo from "@/components/shared/logo";
 import { MaxWidthWrapper } from "@/components/shared/max-width-wrapper";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useCart } from "@/hooks/use-cart";
 import { getCategoryName, siteConfig } from "@/lib/siteconfig";
 import { cn } from "@/lib/utils";
 import {
@@ -20,12 +18,7 @@ import {
   Heart,
   Menu,
   Phone,
-  ShoppingCart,
-  Target,
-  User,
 } from "lucide-react";
-import { signOut, useSession } from "next-auth/react";
-import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -69,12 +62,7 @@ const navItems: NavItemType[] = [
 ];
 
 const TopBar = ({ isVisible }: { isVisible: boolean }) => {
-  const t = useTranslations("common");
-  const { data: session } = useSession();
-
-  const handleSignOut = () => {
-    signOut({ callbackUrl: "/" });
-  };
+  
 
   return (
     <div
@@ -86,7 +74,6 @@ const TopBar = ({ isVisible }: { isVisible: boolean }) => {
       <MaxWidthWrapper className="h-12 flex items-center justify-between">
         <div className="text-sm flex items-center">
           <Globe className="h-4 w-4 text-gray-500 inline " />
-          {t("welcome")}
         </div>
         <div className="flex items-center gap-12 text-sm">
           {/* User Actions */}
@@ -95,7 +82,6 @@ const TopBar = ({ isVisible }: { isVisible: boolean }) => {
               href="tel:+902129231923"
               className="flex items-center gap-2 hover:text-primary transition-colors group"
             >
-              <span className="hidden sm:inline">{t("callCenter")}</span>
               <span className="font-medium">+90 532 599 18 43</span>
             </a>
 
@@ -103,60 +89,9 @@ const TopBar = ({ isVisible }: { isVisible: boolean }) => {
               href="/banka-hesaplari"
               className="flex items-center hover:text-primary transition-colors group"
             >
-              <span>{t("bankAccounts")}</span>
             </Link>
 
-            {session?.user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary hover:bg-white/10"
-                  >
-                    <User className="h-4 w-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent
-                  align="end"
-                  className="w-48 bg-white/95 backdrop-blur-sm"
-                >
-                  <DropdownMenuItem asChild>
-                    <Link
-                      href="/hesap/ayarlar"
-                      className="flex items-center gap-2"
-                    >
-                      {t("myAccount")}
-                    </Link>
-                  </DropdownMenuItem>
-                  {session.role === "ADMIN" && (
-                    <DropdownMenuItem asChild>
-                      <button
-                        className="flex w-full items-center gap-2"
-                        onClick={() => (window.location.href = "/admin")}
-                      >
-                        <Target className="h-4 w-4" />
-                        Yönetim Paneli
-                      </button>
-                    </DropdownMenuItem>
-                  )}
-                  <DropdownMenuItem
-                    onClick={handleSignOut}
-                    className="flex items-center gap-2 text-red-600"
-                  >
-                    <span>{t("signOut")}</span>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <Link
-                href="/giris"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <User className="h-4 w-4" />
-                <span>{t("myAccount")}</span>
-              </Link>
-            )}
+           
           </div>
         </div>
       </MaxWidthWrapper>
@@ -165,8 +100,6 @@ const TopBar = ({ isVisible }: { isVisible: boolean }) => {
 };
 
 const MainNav = () => {
-  const t = useTranslations("common");
-  const locale = useLocale();
 
   return (
     <nav className="hidden md:flex items-center gap-2 w-full">
@@ -180,7 +113,6 @@ const MainNav = () => {
                   size="lg"
                   className="font-medium text-base hover:text-primary hover:bg-primary/5 transition-colors duration-200 flex items-center gap-2 px-3 py-2 rounded-lg"
                 >
-                  {t(item.key)}
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -194,7 +126,6 @@ const MainNav = () => {
                       href={dropdownItem.href}
                       className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-primary/10 transition-colors"
                     >
-                      {t(dropdownItem.key)}
                     </Link>
                   </DropdownMenuItem>
                 ))}
@@ -208,7 +139,6 @@ const MainNav = () => {
                   size="lg"
                   className="font-medium text-base hover:text-primary hover:bg-primary/5 transition-colors duration-200 flex items-center gap-2 px-3 py-2 rounded-lg"
                 >
-                  {t(item.key)}
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -222,24 +152,11 @@ const MainNav = () => {
                       href={`/faaliyetler/${category.slug}`}
                       className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-primary/10 transition-colors"
                     >
-                      <span className="truncate">
-                        {getCategoryName(category, locale)}
-                      </span>
+                      
                     </Link>
                   </DropdownMenuItem>
                 ))}
-                {(!siteConfig.categories ||
-                  siteConfig.categories.length === 0) && (
-                  <DropdownMenuItem disabled>
-                    <span className="text-gray-500 text-sm">
-                      {locale === "ar"
-                        ? "لم يتم العثور على فئة"
-                        : locale === "en"
-                          ? "No category found"
-                          : "Kategori bulunamadı"}
-                    </span>
-                  </DropdownMenuItem>
-                )}
+                
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
@@ -249,7 +166,6 @@ const MainNav = () => {
                 size="lg"
                 className="font-medium text-base hover:text-primary hover:bg-primary/5 transition-colors duration-200 flex items-center gap-2 px-3 py-2 rounded-lg"
               >
-                {t(item.key)}
               </Button>
             </Link>
           )}
@@ -260,8 +176,6 @@ const MainNav = () => {
 };
 
 const MobileNav = () => {
-  const t = useTranslations("common");
-  const locale = useLocale();
 
   return (
     <Sheet>
@@ -297,7 +211,6 @@ const MobileNav = () => {
                       variant="ghost"
                       className="w-full justify-start text-base font-medium hover:bg-primary/10 transition-colors"
                     >
-                      {t(item.key)}
                     </Button>
                   </Link>
                 ) : (
@@ -305,7 +218,6 @@ const MobileNav = () => {
                     variant="ghost"
                     className="w-full justify-start text-base font-medium hover:bg-primary/10 transition-colors"
                   >
-                    {t(item.key)}
                   </Button>
                 )}
 
@@ -318,7 +230,6 @@ const MobileNav = () => {
                           size="sm"
                           className="w-full justify-start text-sm text-gray-600 hover:text-primary hover:bg-primary/5"
                         >
-                          {t(subItem.key)}
                         </Button>
                       </Link>
                     ))}
@@ -340,7 +251,6 @@ const MobileNav = () => {
                             className="w-full justify-start text-sm text-gray-600 hover:text-primary hover:bg-primary/5"
                           >
                             <span className="truncate">
-                              {getCategoryName(category, locale)}
                             </span>
                           </Button>
                         </Link>
@@ -356,7 +266,6 @@ const MobileNav = () => {
             <Link href="/donate">
               <Button className="w-full bg-primary hover:bg-primary/90">
                 <Heart className="h-4 w-4 " />
-                {t("donate")}
               </Button>
             </Link>
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
@@ -376,12 +285,9 @@ const MobileNav = () => {
 };
 
 export function Header() {
-  const { cart } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     let ticking = false;
@@ -437,23 +343,7 @@ export function Header() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-3">
-                <LanguageSwitcher />
-                <Link href="/sepet">
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="relative hover:bg-primary/10 transition-colors"
-                  >
-                    <ShoppingCart className="h-5 w-5" />
-                    {cart.totalItems > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                        {cart.totalItems}
-                      </span>
-                    )}
-                  </Button>
-                </Link>
-              </div>
+              
               {/* Mobile Navigation */}
               <MobileNav />
             </div>
@@ -480,27 +370,7 @@ export function Header() {
           <MainNav />
 
           {/* Right Side Actions */}
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3">
-              <LanguageSwitcher />
-              <Link href="/sepet">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="relative hover:bg-primary/10 transition-colors"
-                >
-                  <ShoppingCart className="h-5 w-5" />
-                  {cart.totalItems > 0 && (
-                    <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                      {cart.totalItems}
-                    </span>
-                  )}
-                </Button>
-              </Link>
-            </div>
-            {/* Mobile Navigation */}
-            <MobileNav />
-          </div>
+        
         </MaxWidthWrapper>
       </header>
     </>

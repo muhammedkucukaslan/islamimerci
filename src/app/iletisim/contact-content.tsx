@@ -42,7 +42,7 @@
         name: "İslami Merci Derneği Mescidi - 1",
         address: "Merkez Mahallesi, Yardım Sokak No:123",
         district: "Bahçelievler / İstanbul",
-        mapUrl: "BURAYA_GOOGLE_MAPS_EMBED_LINKI_1", // Google Maps'ten Embed link al
+        mapUrl: "BURAYA_GOOGLE_MAPS_EMBED_LINKI_1", 
         directionsUrl: "BURAYA_GOOGLE_MAPS_DIRECTIONS_LINKI_1", // Google Maps directions linki
       },
       {
@@ -57,11 +57,11 @@
     return (
       <div className="flex flex-col pb-20">
         {/* Header Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-background border-b border-primary/10 py-24">
+        <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/10 to-background border-b border-primary/10 py-24">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="container mx-auto px-4 text-center space-y-6 relative z-10">
             <div className="inline-block">
-              <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 animate-pulse">
+              <div className="w-10 h-0 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 animate-pulse">
                 <Mail className="w-10 h-10 text-primary" />
               </div>
             </div>

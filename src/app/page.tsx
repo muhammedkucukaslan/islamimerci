@@ -46,12 +46,7 @@ export default function Home() {
                   title: "Şeffaf Hizmet",
                   desc: "Tüm bağış ve faaliyetlerimizi şeffaflıkla paylaşıyoruz.",
                   icon: Globe,
-                },
-                {
-                  title: "Hızlı Teslimat",
-                  desc: "Emanetlerinizi en güvenli ve en hızlı şekilde ulaştırıyoruz.",
-                  icon: Heart,
-                },
+                }
                 ].map((stat, i) => (
                 <div key={i} className="flex gap-6 items-start p-6 bg-white/40 backdrop-blur-xl rounded-2xl border border-primary/10 hover:shadow-lg transition-all">
                   <div className="w-1.5 h-12 bg-primary/20 rounded-full" />

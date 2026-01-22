@@ -15,11 +15,11 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Ana Sayfa", href: "/" },
-  { name: "Hakkımızda", href: "/hakkimizda" },
-  {name : "Mahmud Efendi Hz.", href: "/mahmudefendi-hz"},
   { name: "Faaliyetlerimiz", href: "/faaliyetlerimiz" },
-  { name: "Banka Hesapları", href: "/banka-hesaplari" },
+  {name : "Mahmud Efendi Hz.", href: "/mahmudefendi-hz"},
+  { name: "Hakkımızda", href: "/hakkimizda" },
   { name: "İletişim", href: "/iletisim" },
+  { name: "Banka Hesapları", href: "/banka-hesaplari" },
 ];
 
 export default function Header() {

@@ -124,27 +124,14 @@ export default function BankAccountContent() {
             </CardContent>
           </Card>
 
-          {/* Info Alert */}
-          <div className="bg-blue-50 dark:bg-blue-950/20 rounded-xl border border-blue-200 dark:border-blue-800 p-5 flex gap-3">
-            <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-            <div className="space-y-1">
-              <p className="font-semibold text-blue-900 dark:text-blue-100">
-                Hangi projeye bağış yapmak istersiniz?
-              </p>
-              <p className="text-sm text-blue-800 dark:text-blue-200 leading-relaxed">
-                Bağışınızın Gazze, Medrese, Afrika veya diğer projelerimizden hangisine aktarılmasını istediğinizi 
-                <span className="font-semibold"> açıklama kısmına yazın</span> veya bağış sonrası bizimle iletişime geçin.
-              </p>
-            </div>
-          </div>
-
+          
             {/* Ayah */}
             <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border-2 border-primary/30 dark:border-primary/40 rounded-xl p-8 shadow-sm">
             <div className="text-center space-y-4">
-              <p className="text-base md:text-lg text-foreground italic leading-relaxed font-medium">
-              "Allah yolunda infak edin, kendi ellerinizle kendinizi tehlikeye atmayın. 
-              İyilik edin, kuşkusuz Allah iyilik edenleri sever."
-              </p>
+                <p className="text-base md:text-lg text-foreground italic leading-relaxed font-bold">
+                "Allah yolunda infak edin, kendi ellerinizle kendinizi tehlikeye atmayın. 
+                İyilik edin, kuşkusuz Allah iyilik edenleri sever."
+                </p>
               <span className="block text-primary font-bold not-italic text-sm">
               (Bakara, 195)
               </span>
