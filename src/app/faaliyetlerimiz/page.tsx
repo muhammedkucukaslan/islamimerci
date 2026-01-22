@@ -43,7 +43,7 @@ const activities = [
   },
   {
     id: "gazze",
-    title: "Gazze'ye Yardım Eli Uzatın",
+    title: "Gazze'ye Yardım Eli",
     category: "Yardım",
     date: "Aktif",
     image:
