@@ -12,7 +12,7 @@ export default function BankAccountContent() {
   const bankInfo = {
     bankName: "Vakıf Katılım Bankası",
     accountName: "İSLAMİ MERCİ DERNEĞİ",
-    iban: "TR00 0000 0000 0000 0000 0000 00", // Buraya gerçek IBAN'ı koyacaksın
+    iban: "TR97 0021 0000 0011 7365 7000 34", // Buraya gerçek IBAN'ı koyacaksın
   };
 
   const copyToClipboard = (text: string, field: string) => {
