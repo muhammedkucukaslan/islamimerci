@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function MedresePage() {
   return (
@@ -179,12 +180,12 @@ export default function MedresePage() {
           <p className="text-gray-700">
             Medresemize yardımcı olmak için Instagram DM üzerinden bizimle iletişime geçebilirsiniz.
           </p>
-
+        <Link href="/iletisim">
           <Button className="w-full h-14 rounded-[1.2rem] text-lg font-bold bg-primary shadow-xl shadow-primary/20">
             İletişime Geç
           </Button>
-        </section>
-
+        </Link>
+      </section>
         {/* ================= DUA ================= */}
         <section className="text-center italic text-gray-600">
           “Allah’ım! Medreselerimizi ayakta tut.
