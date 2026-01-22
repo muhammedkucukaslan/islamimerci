@@ -10,58 +10,8 @@ export default function GazzePage() {
         {/* Photo Collage */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80"
+            src="https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlgE6Xw4J89iDG0OpbzcY7MhmVkW6lHufaEgRq"
             alt="Gazze 1"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&q=80"
-            alt="Gazze 2"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80"
-            alt="Gazze 3"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&q=80"
-            alt="Gazze 4"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?w=400&q=80"
-            alt="Gazze 5"
-            className="rounded-lg object-cover w-full h-48 md:col-span-2"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?w=400&q=80"
-            alt="Gazze 6"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&q=80"
-            alt="Gazze 7"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=400&q=80"
-            alt="Gazze 8"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&q=80"
-            alt="Gazze 9"
-            className="rounded-lg object-cover w-full h-48 md:col-span-2"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1497375681173-d97193b897d5?w=400&q=80"
-            alt="Gazze 10"
-            className="rounded-lg object-cover w-full h-48"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&q=80"
-            alt="Gazze 11"
             className="rounded-lg object-cover w-full h-48"
           />
         </div>
@@ -130,11 +80,15 @@ export default function GazzePage() {
             ulaştırılmaktadır. Her kuruş, ihtiyaç sahiplerine dönüşmekte, 
             açların karnını doyurmakta, yaralıların yaralarını sarmaktadır.
           </p>
+          <p>
+                Açları doyurmamak, onlarla ilgilenmemek, Kur’ânî ifâdeyle; “sarp yokuşu aşamamak”tır. Cenâb-ı Hak şöyle buyurur:
+          </p>
 
-          <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded">
-            <p className="font-semibold text-red-900">
-              "Kim bir mümine bir lokma yemek yedirirse, Allah onu Cennet'in 
-              meyvelerinden doyurur." (Tirmizî, Zühd, 35)
+
+
+          <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+            <p className="font-semibold text-black-900">
+              “Fakat o, sarp yokuşu aşamadı. O sarp yokuş nedir bilir misin? Köle âzâd etmek veya açlık gününde yakını olan bir yetimi, yahut aç-açık bir yoksulu doyurmaktır.” (el-Beled, 11-16)
             </p>
           </div>
 

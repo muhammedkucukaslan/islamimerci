@@ -85,9 +85,6 @@ export default function MushafPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>Medreseler ve Kur'ân kursları</li>
             <li>Camiler ve mescitler</li>
-            <li>Hastaneler ve huzurevleri</li>
-            <li>Yurtlar ve eğitim kurumları</li>
-            <li>İhtiyaç sahibi aileler</li>
             <li>Yurt dışındaki Müslüman topluluklar</li>
           </ul>
 
