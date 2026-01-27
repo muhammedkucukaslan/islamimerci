@@ -25,7 +25,7 @@ const activities = [
     id: "mushaf",
     title: "Mushaf-ı Şerif Dağıtımı",
     category: "Eğitim",
-    date: "Aktif",
+    date: "Pasif",
     image:
       "https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlVrYcqblYCkuNXrHI6xQvd7lFL3RmPsy8opqB",
     desc: "Dünyanın dört bir yanındaki ihtiyaç sahiplerine Mushaf-ı Şerif dağıtarak Rabbimizin Yüce Kelâmı Kur'ân-ı Kerîm'in yayılmasına vesile oluyoruz.",

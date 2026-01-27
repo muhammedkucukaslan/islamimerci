@@ -37,7 +37,7 @@ export default function Header() {
                 İslami <span className="text-primary italic">Merci</span>
               </span>
               <span className="text-[10px] md:text-xs font-extra-bold text-muted-foreground tracking-[0.2em] uppercase opacity-60">
-                Hayır Kurumu
+                Yolumuz Tebliğ
               </span>
             </div>
           </Link>

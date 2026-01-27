@@ -31,7 +31,7 @@ export default function BankAccountContent() {
             Banka Hesaplarımız
           </h1>
           <p className="text-muted-foreground text-base max-w-xl mx-auto">
-            Hayır işlerinize ortak olmak için hesap bilgilerimiz
+            Medrese, mescid, dernek faaliyetleri ile alakalı  
           </p>
         </div>
 
@@ -126,17 +126,53 @@ export default function BankAccountContent() {
 
           
             {/* Ayah */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border-2 border-primary/30 dark:border-primary/40 rounded-xl p-8 shadow-sm">
-            <div className="text-center space-y-4">
-                <p className="text-base md:text-lg text-foreground italic leading-relaxed font-bold">
-                "Allah yolunda infak edin, kendi ellerinizle kendinizi tehlikeye atmayın. 
-                İyilik edin, kuşkusuz Allah iyilik edenleri sever."
-                </p>
-              <span className="block text-primary font-bold not-italic text-sm">
-              (Bakara, 195)
-              </span>
-            </div>
-            </div>
+           <div className="max-w-2xl mx-auto space-y-6">
+  {/* Ayet Bölümü */}
+  <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border-2 border-primary/30 dark:border-primary/40 rounded-xl p-6 shadow-sm">
+    <div className="text-center space-y-4">
+      <p className="text-base md:text-lg text-foreground italic leading-relaxed font-bold">
+        "Allah yolunda infak edin, kendi ellerinizle kendinizi tehlikeye atmayın. 
+        İyilik edin, kuşkusuz Allah iyilik edenleri sever."
+      </p>
+      <span className="block text-primary font-bold not-italic text-sm">
+        (Bakara, 195)
+      </span>
+    </div>
+  </div>
+
+  {/* Hizmetler Bölümü */}
+  <div className="bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-300 dark:border-yellow-700 rounded-xl p-6 shadow-sm">
+    <h3 className="text-lg font-bold text-center text-foreground mb-4">
+      Şu Hizmetler İçin Bağış Yapabilirsiniz
+    </h3>
+    <ul className="space-y-3 text-foreground">
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>Medrese/Mescid/Dernek ile alakalı bakım onarım giderleri</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>Kur'an kursları ve eğitim faaliyetleri</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>Tebliğ faaliyetleri</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>Yardıma muhtaç ailelere destek</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>Sosyal ve kültürel etkinlikler</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="text-yellow-600 dark:text-yellow-400 mt-1">•</span>
+        <span>İbadet malzemeleri ve kitap temini</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
           {/* Contact Section */}
           <Card className="border-2">

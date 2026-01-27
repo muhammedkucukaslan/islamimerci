@@ -197,7 +197,7 @@ const MobileNav = () => {
             </div>
             <div>
               <h3 className="font-bold text-primary">İslami Merci</h3>
-              <p className="text-xs text-gray-500">Hayır Kurumu</p>
+              <p className="text-xs text-gray-500 ">Yolumuz Tebliğ</p>
             </div>
           </div>
 

@@ -5,12 +5,12 @@ export default function FaziletliAmellerPage() {
   return (
     <div className="min-h-screen py-12">
       <div className="max-w-5xl mx-auto px-4 space-y-12">
-        <h1 className="text-4xl font-bold">Faziletli Amel Paylaşımları</h1>
+        <h1 className="text-4xl font-bold">Fazîletli Amel Paylaşımları</h1>
 
         {/* ================= TANITIM ================= */}
         <section className="space-y-6 text-lg text-gray-700 leading-relaxed">
           <p>
-            Muhammed Emre Karadayı Hocamız, <a href="https://instagram.com/islamimerci" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold">Resmî İslami Merci Instagram hesabımızdan</a> faziletli amel paylaşımları yapmaktadır. Bu paylaşımlarda; mübarek gün ve gecelerde yapılacak ibadetler, namazda sıkça yapılan hatalar ve bunların doğru şekilleri, faziletli zikirler, dualar, salavatlar ve günlük hayatta kolayca uygulanabilecek sünnetler vb. bilgiler düzenli olarak aktarılmaktadır.
+            Muhammed Emre Karadayı Hocamız, <a href="https://instagram.com/islamimerci" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold">Resmî İslami Merci Instagram hesabımızdan</a> fazîletli amel paylaşımları yapmaktadır. Bu paylaşımlarda; mübarek gün ve gecelerde yapılacak ibadetler, namazda sıkça yapılan hatalar ve bunların doğru şekilleri, fazîletli zikirler, dualar, salavatlar ve günlük hayatta kolayca uygulanabilecek sünnetler vb. bilgiler düzenli olarak aktarılmaktadır.
           </p>
 
           <p>
@@ -65,7 +65,7 @@ export default function FaziletliAmellerPage() {
 
           <div className="space-y-4">
             <p>
-              Hocamızın paylaşımlarının altına bazen bilmeyen kardeşlerimiz "Hocam sizin paylaştığınız bu hadis zayıf. Amel edilemez" minvalinde yorumlar yazıyorlar. O kardeşlerimizin şüphelerine binaen bu kısmı eklemenin faydalı olacağını düşündük. Ehl-i Sünnet Âlimleri <strong>faziletli ameller</strong>, <strong>nafile ibadetler</strong> ve <strong>ahlâk</strong> konularında zayıf hadisle amel edilebileceğini kabul etmiştir. 
+              Hocamızın paylaşımlarının altına bazen bilmeyen kardeşlerimiz "Hocam sizin paylaştığınız bu hadis zayıf. Amel edilemez" minvalinde yorumlar yazıyorlar. O kardeşlerimizin şüphelerine binaen bu kısmı eklemenin faydalı olacağını düşündük. Ehl-i Sünnet Âlimleri <strong>fazîletli ameller</strong>, <strong>nafile ibadetler</strong> ve <strong>ahlâk</strong> konularında zayıf hadisle amel edilebileceğini kabul etmiştir. 
             </p>
           
             {/* ================= KLASİK ÂLİMLER ================= */}
