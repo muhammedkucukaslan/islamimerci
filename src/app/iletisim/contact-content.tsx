@@ -47,7 +47,7 @@
       },
       {
         name: "Bahçelievler Mescidimiz",
-        address: "Cumhuriyer Mahallesi, Çelik Hançer Caddesi, No: 14b",
+        address: "Cumhuriyet Mahallesi, Çelik Hançer Caddesi, No: 14b",
         district: "Bahçelievler / İstanbul",
         mapUrl: "https://www.google.com/maps/embed?pb=!4v1769116748076!6m8!1m7!1s0ZS0bgu7L2wSPThwAyeGKA!2m2!1d41.01633662935193!2d28.85284795351972!3f99.34644812159151!4f-0.4385758261761481!5f0.7820865974627469" , 
         directionsUrl: "https://maps.app.goo.gl/yDDzLhjBTAxVePjL8", 

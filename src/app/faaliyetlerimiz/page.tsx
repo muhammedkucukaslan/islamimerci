@@ -13,6 +13,15 @@ export const metadata: Metadata = {
 
 const activities = [
   {
+    id: "kurban-organizasyonu",
+    title: "Kurban Organizasyonu",
+    category: "Kurban",
+    date: "Aktif",
+    image: "https://a6c61391m3.ufs.sh/f/B1cf7tZ2SmNlQVzYLKg5kPYAS3IoWhQ6tOUTfFpuCexvlV9K",
+    desc: "Dünyanın dört bir yanındaki ihtiyaç sahiplerine kurban organizasyonları düzenleyerek yardım eli uzatıyoruz.",
+    link: "/faaliyetlerimiz/kurban-organizasyonu",
+  },
+  {
     id: "medrese",
     title: "Medrese Eğitimi",
     category: "Eğitim",
