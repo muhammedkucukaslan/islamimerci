@@ -11,9 +11,6 @@ export default function KurbanPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4">
             Kurban İbadeti
           </h1>
-          <p className="text-lg text-gray-700">
-            "Kurban kesin. Çünkü o, atalarınızın sünnetidir."
-          </p>
         </div>
 
     {/* ================= GÖRSELLER ================= */}
