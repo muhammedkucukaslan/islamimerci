@@ -156,7 +156,7 @@ export default function KurbanPage() {
           <td className="px-6 py-4 font-medium text-gray-900">Afrika</td>
           <td className="px-6 py-4 text-gray-700">Küçükbaş</td>
           <td className="px-6 py-4 text-right font-semibold text-emerald-700">
-            4.500
+          3.750
           </td>
         </tr>
 
