@@ -20,9 +20,7 @@ export default function Footer() {
           {/* About Section */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-br from-primary to-accent p-2 rounded-xl shadow-lg shadow-primary/10">
-                <Heart className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img src="/logo.png" alt="İslami Merci Derneği Logo" className="w-10 h-10 rounded-xl shadow-lg shadow-primary/10  to-accent p-2" />
               <span className="text-xl font-bold text-foreground">
                 İslami Merci Derneği
               </span>

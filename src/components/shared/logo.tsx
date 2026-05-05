@@ -8,7 +8,7 @@ type Props = {
 const Logo = ({ className, size = 60 }: Props) => {
   return (
     <Image
-      src="/logo.svg"
+      src="/logo.png"
       alt="İslamimerci"
       width={size}
       height={size}

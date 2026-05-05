@@ -87,7 +87,7 @@ export const siteConfig = {
     email: "info@islamimerci.org",
   },
   about: {
-    image: "/images/logo/islamimerci-logo.png",
+    image: "/public/islamimerci-logo.png",
     pageDescription: [
       {
         language: "tr",

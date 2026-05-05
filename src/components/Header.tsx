@@ -29,8 +29,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 md:h-28">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-4 group">
-            <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-[1.25rem] flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-inner">
-              <Heart className="w-7 h-7 md:w-8 md:h-8 text-primary fill-primary/10" />
+            <div className="w-12 h-12 md:w-14 md:h-14  rounded-[1.25rem] flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-inner">
+              <img
+              src="/logo.png"
+              alt="İslami Merci Logo"
+              className="w-12 h-12 md:w-14 md:h-14 object-contain"
+              />
             </div>
             <div className="flex flex-col -space-y-1">
               <span className="text-2xl md:text-3xl font-black text-foreground tracking-tighter uppercase leading-none">

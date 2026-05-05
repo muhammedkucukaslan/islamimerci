@@ -144,50 +144,30 @@ export default function KurbanPage() {
     <table className="w-full border-collapse">
       <thead>
         <tr className="bg-emerald-700 text-white">
-          <th className="px-6 py-4 text-left rounded-tl-lg">Bölge</th>
-          <th className="px-6 py-4 text-left">Hayvan Türü</th>
+          <th className="px-6 py-4 text-left rounded-tl-lg">Hayvan Türü</th>
           <th className="px-6 py-4 text-right rounded-tr-lg">Fiyat (₺)</th>
         </tr>
       </thead>
 
       <tbody className="divide-y divide-gray-200">
-
         <tr className="hover:bg-emerald-50 transition-colors">
-          <td className="px-6 py-4 font-medium text-gray-900">Afrika</td>
-          <td className="px-6 py-4 text-gray-700">Küçükbaş</td>
-          <td className="px-6 py-4 text-right font-semibold text-emerald-700">
-          3.750
-          </td>
+          <td className="px-6 py-4 font-medium text-gray-900">Küçükbaş</td>
+          <td className="px-6 py-4 text-right font-semibold text-emerald-700">3.750</td>
         </tr>
-
         <tr className="hover:bg-emerald-50 transition-colors">
-          <td className="px-6 py-4 font-medium text-gray-900">Afrika</td>
-          <td className="px-6 py-4 text-gray-700">Büyükbaş (Tam)</td>
-          <td className="px-6 py-4 text-right font-semibold text-emerald-700">
-            24.500
-          </td>
+          <td className="px-6 py-4 font-medium text-gray-900">Büyükbaş (1 Hisse)</td>
+          <td className="px-6 py-4 text-right font-semibold text-emerald-700">3.500</td>
         </tr>
-
         <tr className="hover:bg-emerald-50 transition-colors">
-          <td className="px-6 py-4 font-medium text-gray-900">Yurtiçi</td>
-          <td className="px-6 py-4 text-gray-700">Küçükbaş</td>
-          <td className="px-6 py-4 text-right font-semibold text-emerald-700">
-            15.000
-          </td>
+          <td className="px-6 py-4 font-medium text-gray-900">Büyükbaş (Tamamı)</td>
+          <td className="px-6 py-4 text-right font-semibold text-emerald-700">24.500</td>
         </tr>
-
       </tbody>
     </table>
   </div>
-
-  <div className="mt-6 p-4 bg-emerald-50 rounded-lg border border-emerald-200">
-    <p className="text-sm text-gray-700">
-      <span className="font-semibold text-emerald-800">Not:</span> Fiyatlara tüm hizmetler dahildir. 
-      Kesim, organizasyon ve bilgilendirme süreci bu bedellere dahildir.
-    </p>
-  </div>
 </section>
 
+  
         
         {/* ================= SADAKA-İ CARİYE ================= */}
         <section className="bg-gradient-to-r from-amber-50 to-emerald-50 rounded-xl shadow-lg p-8 md:p-12 mb-12">
