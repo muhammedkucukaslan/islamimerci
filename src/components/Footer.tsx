@@ -96,7 +96,7 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <span className="text-sm">
-                  Yıldıztepe Mahallesi, 37/13B no:13
+                  Yıldıztepe Mahallesi, 556. Sokak, No:13A
                   <br />
                   Bağcılar, İstanbul, Türkiye
                 </span>
